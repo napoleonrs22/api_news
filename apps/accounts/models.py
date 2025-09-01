@@ -3,41 +3,27 @@ from django.db import models
 
 
 class User(AbstractUser):
-    """Кастомная модель пользователя"""
-    phone = models.CharField(
-        max_length=20, 
-        blank=True, 
-        null=True,
-        verbose_name="Телефон"
-    )
-    
-    avatar = models.ImageField(
-        upload_to='avatars/', 
-        blank=True, 
-        null=True,
-        verbose_name="Аватар"
-    )
-    
-    bio = models.TextField(
-        max_length=500, 
-        blank=True,
-        verbose_name="О себе"
-    )
-    
-    created_at = models.DateTimeField(
-        auto_now_add=True,
-        verbose_name="Дата создания"
-    )
-    
-    updated_at = models.DateTimeField(
-        auto_now=True,
-        verbose_name="Дата обновления"
-    )
+    email = models.EmailField(unique=True)
+    first_name = models.CharField(max_length=30,blank=True)
+    last_name = models.CharField(max_length=30,blank=True)
+    avatar = models.ImageField(upload_to='avatars/', blank=True, null=True)
+    bio = models.TextField(max_length=500, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_active = models.BooleanField(default=True)
+
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
+
 
     class Meta:
-        verbose_name = "Пользователь"
-        verbose_name_plural = "Пользователи"
-        ordering = ['-created_at']
+        db_table = 'users'
+        verbose_name = 'User'
+        verbose_name_plural = 'Users'
 
     def __str__(self):
-        return f"{self.username} ({self.get_full_name() or self.email})"
+        return  self.email
+    
+    @property
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}".strip()
