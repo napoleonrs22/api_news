@@ -15,7 +15,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password', 'password_confirm'
+        fields = ('username', 'email', 'password', 'password_confirm',
                   'first_name', 'last_name')
         
     def validate(self, attrs):
@@ -59,8 +59,8 @@ class UserLoginSerializer(serializers.Serializer):
 class UserProfileSerializer(serializers.ModelSerializer):
 
     full_name = serializers.ReadOnlyField()
-    posts_count = serializers.SerializerMethodField()
-    comments_count = serializers.SerializerMethodField()
+    # posts_count = serializers.SerializerMethodField()
+    # comments_count = serializers.SerializerMethodField()
 
 
     class Meta:
@@ -69,16 +69,19 @@ class UserProfileSerializer(serializers.ModelSerializer):
         fields = (
             'id','username','email','first_name','last_name',
             'full_name', 'avatar','bio','created_at','updated_at',
-            'posts_count', 'comments_count'
+            # 'posts_count', 
+            # 'comments_count'
         )
         read_only_fields = ('id', 'created_at', 'updated_at')
 
 
-    def get_posts_count(self,obj):
-        return obj.posts.count()
+    # def get_posts_count(self,obj):
+    #     # This requires a 'Post' model with a ForeignKey to User and a related_name='posts'
+    #     return obj.posts.count()
     
-    def get_comments_count(self,obj):
-        return obj.comments.count()
+    # def get_comments_count(self,obj):
+    #     # This requires a 'Comment' model with a ForeignKey to User and a related_name='comments'
+    #     return obj.comments.count()
     
 
 class UserUpdateSerializer(serializers.ModelSerializer):

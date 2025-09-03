@@ -41,3 +41,246 @@ INFO 2025-08-31 07:05:16,648 basehttp 12437 138906383148736 "GET /admin/jsi18n/ 
 INFO 2025-08-31 07:05:16,657 basehttp 12437 138906365314752 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
 INFO 2025-08-31 07:05:16,675 basehttp 12437 138906391541440 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
 INFO 2025-08-31 07:05:16,776 basehttp 12437 138906391541440 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-09-03 18:14:37,009 autoreload 20425 132662935490688 Watching for file changes with StatReloader
+WARNING 2025-09-03 18:14:41,448 log 20425 132662801987264 Not Found: /
+WARNING 2025-09-03 18:14:41,449 basehttp 20425 132662801987264 "GET / HTTP/1.1" 404 2651
+WARNING 2025-09-03 18:14:41,521 log 20425 132662801987264 Not Found: /favicon.ico
+WARNING 2025-09-03 18:14:41,522 basehttp 20425 132662801987264 "GET /favicon.ico HTTP/1.1" 404 2702
+WARNING 2025-09-03 18:17:24,861 log 20425 132662801987264 Not Found: /auth/
+WARNING 2025-09-03 18:17:24,861 basehttp 20425 132662801987264 "POST /auth/ HTTP/1.1" 404 2685
+WARNING 2025-09-03 18:17:40,772 log 20425 132662801987264 Not Found: /auth/
+WARNING 2025-09-03 18:17:40,772 basehttp 20425 132662801987264 "POST /auth/ HTTP/1.1" 404 2685
+WARNING 2025-09-03 18:18:17,474 log 20425 132662801987264 Not Found: /login/
+WARNING 2025-09-03 18:18:17,475 basehttp 20425 132662801987264 "POST /login/ HTTP/1.1" 404 2688
+WARNING 2025-09-03 18:18:59,470 log 20425 132662801987264 Not Found: /auth/
+WARNING 2025-09-03 18:18:59,470 basehttp 20425 132662801987264 "POST /auth/ HTTP/1.1" 404 2685
+WARNING 2025-09-03 18:19:41,156 log 20425 132662801987264 Unsupported Media Type: /api/v1/auth/register/
+WARNING 2025-09-03 18:19:41,157 basehttp 20425 132662801987264 "POST /api/v1/auth/register/ HTTP/1.1" 415 62
+WARNING 2025-09-03 18:19:51,799 log 20425 132662801987264 Unsupported Media Type: /api/v1/auth/register/
+WARNING 2025-09-03 18:19:51,800 basehttp 20425 132662801987264 "POST /api/v1/auth/register/ HTTP/1.1" 415 62
+ERROR 2025-09-03 18:20:20,271 log 20425 132662801987264 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/apps/accounts/views.py", line 27, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 497, in to_internal_value
+    for field in fields:
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'password_confirm' was declared on serializer UserRegistrationSerializer, but has not been included in the 'fields' option.
+ERROR 2025-09-03 18:20:20,273 basehttp 20425 132662801987264 "POST /api/v1/auth/register/ HTTP/1.1" 500 162119
+ERROR 2025-09-03 18:21:12,088 log 20425 132662801987264 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/apps/accounts/views.py", line 27, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 497, in to_internal_value
+    for field in fields:
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1081, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 1177, in get_field_names
+    assert field_name in fields, (
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: The field 'password_confirm' was declared on serializer UserRegistrationSerializer, but has not been included in the 'fields' option.
+ERROR 2025-09-03 18:21:12,090 basehttp 20425 132662801987264 "POST /api/v1/auth/register/ HTTP/1.1" 500 162111
+INFO 2025-09-03 18:23:40,541 autoreload 20425 132662935490688 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-03 18:23:40,990 autoreload 21471 133542203314304 Watching for file changes with StatReloader
+WARNING 2025-09-03 18:23:45,458 log 21471 133542069663424 Bad Request: /api/v1/auth/register/
+WARNING 2025-09-03 18:23:45,458 basehttp 21471 133542069663424 "POST /api/v1/auth/register/ HTTP/1.1" 400 87
+ERROR 2025-09-03 18:24:38,824 log 21471 133542069663424 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/apps/accounts/views.py", line 33, in create
+    'user': UserProfileSerializer(user).data,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/apps/accounts/serializers.py", line 79, in get_posts_count
+    return obj.posts.count()
+           ^^^^^^^^^
+AttributeError: 'User' object has no attribute 'posts'
+ERROR 2025-09-03 18:24:38,829 basehttp 21471 133542069663424 "POST /api/v1/auth/register/ HTTP/1.1" 500 144679
+INFO 2025-09-03 18:26:00,431 autoreload 21471 133542203314304 /home/erasyl/Documents/app_news/apps/accounts/models.py changed, reloading.
+INFO 2025-09-03 18:26:00,901 autoreload 21795 134305375510656 Watching for file changes with StatReloader
+INFO 2025-09-03 18:26:02,094 autoreload 21795 134305375510656 /home/erasyl/Documents/app_news/apps/accounts/models.py changed, reloading.
+INFO 2025-09-03 18:26:02,498 autoreload 21810 139013524947072 Watching for file changes with StatReloader
+INFO 2025-09-03 18:26:12,753 autoreload 21810 139013524947072 /home/erasyl/Documents/app_news/apps/accounts/models.py changed, reloading.
+INFO 2025-09-03 18:26:13,201 autoreload 21864 136179586904192 Watching for file changes with StatReloader
+INFO 2025-09-03 18:27:59,545 autoreload 21864 136179586904192 /home/erasyl/Documents/app_news/apps/accounts/models.py changed, reloading.
+INFO 2025-09-03 18:28:00,004 autoreload 21984 137749740175488 Watching for file changes with StatReloader
+INFO 2025-09-03 18:28:06,371 autoreload 21984 137749740175488 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-03 18:28:06,796 autoreload 22036 129477659766912 Watching for file changes with StatReloader
+INFO 2025-09-03 18:28:09,220 autoreload 22049 134646053847168 Watching for file changes with StatReloader
+WARNING 2025-09-03 18:28:13,441 log 22049 134645987407552 Bad Request: /api/v1/auth/register/
+WARNING 2025-09-03 18:28:13,441 basehttp 22049 134645987407552 "POST /api/v1/auth/register/ HTTP/1.1" 400 107
+INFO 2025-09-03 18:29:24,177 autoreload 22049 134646053847168 /home/erasyl/Documents/app_news/apps/accounts/models.py changed, reloading.
+INFO 2025-09-03 18:29:24,591 autoreload 22268 135639840981120 Watching for file changes with StatReloader
+WARNING 2025-09-03 18:29:27,443 log 22268 135639774262976 Bad Request: /api/v1/auth/register/
+WARNING 2025-09-03 18:29:27,444 basehttp 22268 135639774262976 "POST /api/v1/auth/register/ HTTP/1.1" 400 107
+WARNING 2025-09-03 18:30:48,490 log 22268 135639695619776 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:30:48,490 basehttp 22268 135639695619776 "POST /api/v1/auth HTTP/1.1" 404 2703
+WARNING 2025-09-03 18:31:24,973 log 22268 135639695619776 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:31:24,973 basehttp 22268 135639695619776 "POST /api/v1/auth HTTP/1.1" 404 2703
+WARNING 2025-09-03 18:32:00,953 log 22268 135639695619776 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:32:00,954 basehttp 22268 135639695619776 "POST /api/v1/auth HTTP/1.1" 404 2703
+WARNING 2025-09-03 18:32:05,608 log 22268 135639695619776 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:32:05,609 basehttp 22268 135639695619776 "POST /api/v1/auth HTTP/1.1" 404 2703
+WARNING 2025-09-03 18:32:36,814 log 22268 135639695619776 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:32:36,814 basehttp 22268 135639695619776 "GET /api/v1/auth HTTP/1.1" 404 2702
+WARNING 2025-09-03 18:32:51,100 log 22268 135639695619776 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:32:51,100 basehttp 22268 135639695619776 "POST /api/v1/auth HTTP/1.1" 404 2703
+INFO 2025-09-03 18:36:11,749 autoreload 22268 135639840981120 /home/erasyl/Documents/app_news/apps/accounts/models.py changed, reloading.
+INFO 2025-09-03 18:36:12,367 autoreload 22972 135612193071232 Watching for file changes with StatReloader
+INFO 2025-09-03 18:36:21,193 autoreload 23036 138229783498880 Watching for file changes with StatReloader
+WARNING 2025-09-03 18:36:24,412 log 23036 138229717137088 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:36:24,413 basehttp 23036 138229717137088 "POST /api/v1/auth HTTP/1.1" 404 2703
+WARNING 2025-09-03 18:36:57,764 log 23036 138229717137088 Not Found: /api/v1/auth
+WARNING 2025-09-03 18:36:57,764 basehttp 23036 138229717137088 "POST /api/v1/auth HTTP/1.1" 404 2703
+WARNING 2025-09-03 18:36:59,827 log 23036 138229717137088 Not Found: /api/v1/auth/
+WARNING 2025-09-03 18:36:59,827 basehttp 23036 138229717137088 "POST /api/v1/auth/ HTTP/1.1" 404 4189
+INFO 2025-09-03 18:37:25,165 basehttp 23036 138229717137088 "POST /api/v1/auth/register/ HTTP/1.1" 201 769
+ERROR 2025-09-03 18:38:06,414 log 23036 138229717137088 Internal Server Error: /api/v1/auth/login
+Traceback (most recent call last):
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/v1/auth/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-09-03 18:38:06,416 basehttp 23036 138229717137088 "POST /api/v1/auth/login HTTP/1.1" 500 89316
+INFO 2025-09-03 18:38:55,018 basehttp 23036 138229717137088 "POST /api/v1/auth/login/ HTTP/1.1" 200 764
+WARNING 2025-09-03 18:39:37,208 log 23036 138229717137088 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-03 18:39:37,208 basehttp 23036 138229717137088 "GET /api/v1/auth/profile/ HTTP/1.1" 401 58
+WARNING 2025-09-03 18:40:21,358 log 23036 138229717137088 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-03 18:40:21,359 basehttp 23036 138229717137088 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-03 18:40:38,104 log 23036 138229717137088 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-03 18:40:38,104 basehttp 23036 138229717137088 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-03 18:40:48,052 log 23036 138229717137088 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-03 18:40:48,053 basehttp 23036 138229717137088 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+INFO 2025-09-03 18:41:06,343 basehttp 23036 138229717137088 "GET /api/v1/auth/profile/ HTTP/1.1" 200 231
+WARNING 2025-09-03 18:41:36,998 log 23036 138229717137088 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-03 18:41:36,998 basehttp 23036 138229717137088 "PATCH /api/v1/auth/profile/ HTTP/1.1" 401 58
+INFO 2025-09-03 18:41:45,635 basehttp 23036 138229717137088 "PATCH /api/v1/auth/profile/ HTTP/1.1" 200 114
