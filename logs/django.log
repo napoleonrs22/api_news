@@ -284,3 +284,284 @@ INFO 2025-09-03 18:41:06,343 basehttp 23036 138229717137088 "GET /api/v1/auth/pr
 WARNING 2025-09-03 18:41:36,998 log 23036 138229717137088 Unauthorized: /api/v1/auth/profile/
 WARNING 2025-09-03 18:41:36,998 basehttp 23036 138229717137088 "PATCH /api/v1/auth/profile/ HTTP/1.1" 401 58
 INFO 2025-09-03 18:41:45,635 basehttp 23036 138229717137088 "PATCH /api/v1/auth/profile/ HTTP/1.1" 200 114
+INFO 2025-09-04 03:51:43,446 autoreload 6762 133476199182464 Watching for file changes with StatReloader
+WARNING 2025-09-04 03:54:28,331 log 6762 133476132058816 Bad Request: /api/v1/auth/register/
+WARNING 2025-09-04 03:54:28,331 basehttp 6762 133476132058816 "POST /api/v1/auth/register/ HTTP/1.1" 400 107
+INFO 2025-09-04 03:54:47,940 basehttp 6762 133476132058816 "POST /api/v1/auth/register/ HTTP/1.1" 201 769
+WARNING 2025-09-04 03:58:55,880 log 6762 133476121568960 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-04 03:58:55,880 basehttp 6762 133476121568960 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+INFO 2025-09-04 04:09:38,531 basehttp 6762 133475906614976 "POST /api/v1/auth/register/ HTTP/1.1" 201 767
+INFO 2025-09-04 04:09:59,572 basehttp 6762 133475906614976 "POST /api/v1/auth/login/ HTTP/1.1" 200 762
+WARNING 2025-09-04 04:10:28,587 log 6762 133475906614976 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-04 04:10:28,587 basehttp 6762 133475906614976 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-04 04:10:46,344 log 6762 133475906614976 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-04 04:10:46,344 basehttp 6762 133475906614976 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+INFO 2025-09-04 04:11:07,467 basehttp 6762 133475906614976 "GET /api/v1/auth/profile/ HTTP/1.1" 200 229
+INFO 2025-09-05 11:03:43,971 autoreload 19357 128094403362944 Watching for file changes with StatReloader
+INFO 2025-09-05 11:04:45,346 basehttp 19357 128094338807488 "POST /api/v1/auth/register/ HTTP/1.1" 201 767
+INFO 2025-09-05 11:05:39,838 autoreload 19357 128094403362944 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:05:40,168 autoreload 19907 130068242112640 Watching for file changes with StatReloader
+INFO 2025-09-05 11:05:44,392 autoreload 19907 130068242112640 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:05:44,750 autoreload 19946 125673139564672 Watching for file changes with StatReloader
+INFO 2025-09-05 11:05:52,999 autoreload 19946 125673139564672 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:05:53,397 autoreload 20012 129279968505984 Watching for file changes with StatReloader
+WARNING 2025-09-05 11:06:03,702 log 20012 129279903921856 Bad Request: /api/v1/auth/register/
+WARNING 2025-09-05 11:06:03,702 basehttp 20012 129279903921856 "POST /api/v1/auth/register/ HTTP/1.1" 400 107
+ERROR 2025-09-05 11:06:22,139 log 20012 129279903921856 Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/apps/accounts/views.py", line 33, in create
+    'user': UserProfileSerializer(user).data,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/fields.py", line 1870, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/apps/accounts/serializers.py", line 80, in get_posts_count
+    return obj.posts.count()
+           ^^^^^^^^^
+AttributeError: 'User' object has no attribute 'posts'
+ERROR 2025-09-05 11:06:22,141 basehttp 20012 129279903921856 "POST /api/v1/auth/register/ HTTP/1.1" 500 148950
+INFO 2025-09-05 11:07:07,826 autoreload 20012 129279968505984 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:08,182 autoreload 20256 127020943446144 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:15,446 autoreload 20256 127020943446144 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:15,733 autoreload 20316 138206996398208 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:16,824 autoreload 20316 138206996398208 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:17,128 autoreload 20321 137076634857600 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:19,219 autoreload 20321 137076634857600 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:19,516 autoreload 20358 137916228067456 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:21,612 autoreload 20358 137916228067456 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:21,919 autoreload 20369 138915874926720 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:24,016 autoreload 20369 138915874926720 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:24,307 autoreload 20400 131126178009216 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:26,402 autoreload 20400 131126178009216 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:26,686 autoreload 20413 133760937824384 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:28,778 autoreload 20413 133760937824384 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:29,062 autoreload 20444 125887643521152 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:31,144 autoreload 20444 125887643521152 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:31,460 autoreload 20463 132397836337280 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:35,681 autoreload 20463 132397836337280 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:36,015 autoreload 20503 135008499777664 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:38,189 autoreload 20503 135008499777664 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:38,490 autoreload 20508 134459510694016 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:46,668 autoreload 20508 134459510694016 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:46,994 autoreload 20589 136227205914752 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:48,078 autoreload 20589 136227205914752 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:48,378 autoreload 20592 137283603054720 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:49,459 autoreload 20592 137283603054720 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:49,762 autoreload 20607 134620422316160 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:51,861 autoreload 20607 134620422316160 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:52,161 autoreload 20632 138708042821760 Watching for file changes with StatReloader
+INFO 2025-09-05 11:07:58,395 autoreload 20632 138708042821760 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:07:58,675 autoreload 20680 139993032147072 Watching for file changes with StatReloader
+INFO 2025-09-05 11:08:01,863 autoreload 20680 139993032147072 /home/erasyl/Documents/app_news/apps/accounts/serializers.py changed, reloading.
+INFO 2025-09-05 11:08:02,225 autoreload 20722 128473664643200 Watching for file changes with StatReloader
+INFO 2025-09-05 11:08:10,931 basehttp 20722 128473599309504 "POST /api/v1/auth/register/ HTTP/1.1" 201 806
+INFO 2025-09-05 11:11:20,301 basehttp 20722 128473588819648 "POST /api/v1/auth/login/ HTTP/1.1" 200 801
+WARNING 2025-09-05 11:11:26,997 log 20722 128473588819648 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-05 11:11:26,998 basehttp 20722 128473588819648 "GET /api/v1/auth/profile/ HTTP/1.1" 401 176
+WARNING 2025-09-05 11:11:34,964 log 20722 128473588819648 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-05 11:11:34,965 basehttp 20722 128473588819648 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+WARNING 2025-09-05 11:11:50,650 log 20722 128473588819648 Unauthorized: /api/v1/auth/profile/
+WARNING 2025-09-05 11:11:50,651 basehttp 20722 128473588819648 "GET /api/v1/auth/profile/ HTTP/1.1" 401 172
+INFO 2025-09-05 11:12:01,299 basehttp 20722 128473588819648 "GET /api/v1/auth/profile/ HTTP/1.1" 200 268
+INFO 2025-09-05 11:12:17,806 basehttp 20722 128473588819648 "PATCH /api/v1/auth/profile/ HTTP/1.1" 200 114
+INFO 2025-09-05 11:12:36,031 basehttp 20722 128473588819648 "PATCH /api/v1/auth/profile/ HTTP/1.1" 200 112
+WARNING 2025-09-05 11:12:49,069 log 20722 128473588819648 Bad Request: /api/v1/auth/login/
+WARNING 2025-09-05 11:12:49,069 basehttp 20722 128473588819648 "POST /api/v1/auth/login/ HTTP/1.1" 400 68
+WARNING 2025-09-05 11:15:34,038 log 20722 128473580426944 Unauthorized: /api/v1/auth/logout/
+WARNING 2025-09-05 11:15:34,039 basehttp 20722 128473580426944 "POST /api/v1/auth/logout/ HTTP/1.1" 401 58
+INFO 2025-09-05 11:15:58,608 basehttp 20722 128473580426944 "POST /api/v1/auth/logout/ HTTP/1.1" 205 32
+WARNING 2025-09-05 11:16:03,133 log 20722 128473580426944 Bad Request: /api/v1/auth/login/
+WARNING 2025-09-05 11:16:03,133 basehttp 20722 128473580426944 "POST /api/v1/auth/login/ HTTP/1.1" 400 68
+INFO 2025-09-05 11:16:25,570 basehttp 20722 128473580426944 "POST /api/v1/auth/login/ HTTP/1.1" 200 855
+INFO 2025-09-05 11:17:05,044 autoreload 20722 128473664643200 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:17:05,405 autoreload 21813 140476891766912 Watching for file changes with StatReloader
+INFO 2025-09-05 11:18:35,922 autoreload 21813 140476891766912 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:18:36,201 autoreload 21988 131738985406592 Watching for file changes with StatReloader
+INFO 2025-09-05 11:18:38,373 autoreload 21988 131738985406592 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:18:38,688 autoreload 22027 128002551201920 Watching for file changes with StatReloader
+INFO 2025-09-05 11:18:39,849 autoreload 22027 128002551201920 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:18:40,164 autoreload 22033 130793722515584 Watching for file changes with StatReloader
+INFO 2025-09-05 11:18:56,622 autoreload 22033 130793722515584 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:18:56,963 autoreload 22087 138472372859008 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:01,145 autoreload 22087 138472372859008 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:01,426 autoreload 22141 135291864993920 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:04,599 autoreload 22141 135291864993920 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:04,868 autoreload 22180 125372848222336 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:11,077 autoreload 22180 125372848222336 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:11,379 autoreload 22226 138290850922624 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:16,573 autoreload 22226 138290850922624 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:16,870 autoreload 22267 133917694288000 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:21,058 autoreload 22267 133917694288000 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:21,343 autoreload 22310 127297162526848 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:25,546 autoreload 22310 127297162526848 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:25,863 autoreload 22351 140361457717376 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:33,141 autoreload 22351 140361457717376 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:33,421 autoreload 22397 133200756977792 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:37,644 autoreload 22397 133200756977792 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:37,919 autoreload 22439 136199576903808 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:42,121 autoreload 22439 136199576903808 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:42,406 autoreload 22494 140031798304896 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:43,573 autoreload 22494 140031798304896 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:43,854 autoreload 22502 137222245478528 Watching for file changes with StatReloader
+INFO 2025-09-05 11:19:52,152 autoreload 22502 137222245478528 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:19:52,489 autoreload 22562 135807810400384 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:02,809 autoreload 22562 135807810400384 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:03,115 autoreload 22624 136496714903680 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:05,291 autoreload 22624 136496714903680 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:05,605 autoreload 22667 125061086371968 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:08,812 autoreload 22667 125061086371968 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:09,115 autoreload 22683 132066526142592 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:10,288 autoreload 22683 132066526142592 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:10,559 autoreload 22709 139185256628352 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:13,734 autoreload 22709 139185256628352 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:14,027 autoreload 22719 130758653591680 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:18,253 autoreload 22719 130758653591680 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:18,527 autoreload 22756 137147714261120 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:22,713 autoreload 22756 137147714261120 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:23,042 autoreload 22798 130353396662400 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:25,210 autoreload 22798 130353396662400 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:25,527 autoreload 22837 131015330738304 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:38,901 autoreload 22837 131015330738304 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:39,190 autoreload 22902 137585471008896 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:41,377 autoreload 22902 137585471008896 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:41,656 autoreload 22943 125558937137280 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:46,877 autoreload 22943 125558937137280 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:47,175 autoreload 22982 130882745745536 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:49,339 autoreload 22982 130882745745536 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:49,612 autoreload 22991 138020638421120 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:52,786 autoreload 22991 138020638421120 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:53,064 autoreload 23029 139362719461504 Watching for file changes with StatReloader
+INFO 2025-09-05 11:20:55,241 autoreload 23029 139362719461504 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:20:55,524 autoreload 23046 135554862784640 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:31,147 autoreload 23046 135554862784640 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:31,435 autoreload 23181 123647047622784 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:34,635 autoreload 23181 123647047622784 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:34,944 autoreload 23220 133297066979456 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:37,116 autoreload 23220 133297066979456 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:37,396 autoreload 23236 123844494024832 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:41,571 autoreload 23236 123844494024832 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:41,878 autoreload 23269 136153437794432 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:47,101 autoreload 23269 136153437794432 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:47,377 autoreload 23321 132372086931584 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:51,574 autoreload 23321 132372086931584 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:51,889 autoreload 23354 130612653043840 Watching for file changes with StatReloader
+INFO 2025-09-05 11:21:53,053 autoreload 23354 130612653043840 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:21:53,348 autoreload 23384 137528707883136 Watching for file changes with StatReloader
+INFO 2025-09-05 11:22:43,136 autoreload 23384 137528707883136 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:22:43,500 autoreload 23492 131297025863808 Watching for file changes with StatReloader
+INFO 2025-09-05 11:22:45,669 autoreload 23492 131297025863808 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:22:46,003 autoreload 23529 123869219082368 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:13,565 autoreload 23529 123869219082368 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:13,942 autoreload 23615 136693796167808 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:18,157 autoreload 23615 136693796167808 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:18,458 autoreload 23667 128827880595584 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:23,686 autoreload 23667 128827880595584 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:23,989 autoreload 23713 123957838798976 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:28,208 autoreload 23713 123957838798976 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:28,481 autoreload 23754 128711604977792 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:30,658 autoreload 23754 128711604977792 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:30,940 autoreload 23791 123850695262336 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:32,099 autoreload 23791 123850695262336 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:32,433 autoreload 23795 134625280483456 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:36,643 autoreload 23795 134625280483456 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:36,923 autoreload 23840 132615663591552 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:41,135 autoreload 23840 132615663591552 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:41,429 autoreload 23879 127917651353728 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:48,693 autoreload 23879 127917651353728 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:48,986 autoreload 23927 139613019771008 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:53,178 autoreload 23927 139613019771008 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:53,460 autoreload 23967 139304657744000 Watching for file changes with StatReloader
+INFO 2025-09-05 11:23:54,627 autoreload 23967 139304657744000 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:23:54,914 autoreload 23977 131289946931328 Watching for file changes with StatReloader
+INFO 2025-09-05 11:24:00,160 autoreload 23977 131289946931328 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:24:00,441 autoreload 24028 137606842871936 Watching for file changes with StatReloader
+INFO 2025-09-05 11:24:15,696 autoreload 24028 137606842871936 /home/erasyl/Documents/app_news/apps/accounts/admin.py changed, reloading.
+INFO 2025-09-05 11:24:15,980 autoreload 24101 124232526057600 Watching for file changes with StatReloader
+INFO 2025-09-05 11:34:55,525 autoreload 26381 140334492487808 Watching for file changes with StatReloader
+WARNING 2025-09-05 11:34:57,184 log 26381 140334360164032 Not Found: /
+WARNING 2025-09-05 11:34:57,184 basehttp 26381 140334360164032 "GET / HTTP/1.1" 404 2651
+WARNING 2025-09-05 11:34:57,276 log 26381 140334360164032 Not Found: /favicon.ico
+WARNING 2025-09-05 11:34:57,277 basehttp 26381 140334360164032 "GET /favicon.ico HTTP/1.1" 404 2702
+WARNING 2025-09-05 11:34:59,158 log 26381 140334360164032 Not Found: /docs
+WARNING 2025-09-05 11:34:59,159 basehttp 26381 140334360164032 "GET /docs HTTP/1.1" 404 2681
+INFO 2025-09-05 11:34:59,861 basehttp 26381 140334360164032 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-05 11:34:59,889 basehttp 26381 140334360164032 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-09-05 11:34:59,945 basehttp 26381 140334360164032 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:34:59,949 basehttp 26381 140334342330048 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:34:59,949 basehttp 26381 140334351771328 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:34:59,950 basehttp 26381 140334325544640 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:34:59,951 basehttp 26381 140334317151936 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:34:59,951 basehttp 26381 140334333937344 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:34:59,956 basehttp 26381 140334333937344 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:13,480 basehttp 26381 140334333937344 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-05 11:35:13,509 basehttp 26381 140334333937344 "GET /admin/ HTTP/1.1" 200 6597
+INFO 2025-09-05 11:35:13,566 basehttp 26381 140334333937344 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:13,614 basehttp 26381 140334333937344 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:13,614 basehttp 26381 140334360164032 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,641 basehttp 26381 140334333937344 "GET /admin/accounts/user/ HTTP/1.1" 200 13905
+INFO 2025-09-05 11:35:23,656 basehttp 26381 140334333937344 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,668 basehttp 26381 140334342330048 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,671 basehttp 26381 140334351771328 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,671 basehttp 26381 140334325544640 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-09-05 11:35:23,672 basehttp 26381 140334342330048 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,673 basehttp 26381 140334351771328 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,676 basehttp 26381 140334317151936 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-09-05 11:35:23,683 basehttp 26381 140334325544640 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,683 basehttp 26381 140334317151936 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,686 basehttp 26381 140334360164032 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-05 11:35:23,717 basehttp 26381 140334342330048 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,717 basehttp 26381 140334351771328 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-09-05 11:35:23,739 basehttp 26381 140334317151936 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,740 basehttp 26381 140334325544640 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:23,760 basehttp 26381 140334360164032 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-09-05 11:35:23,760 basehttp 26381 140334333937344 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-09-05 11:35:43,808 basehttp 26381 140334325544640 "GET /admin/accounts/user/3/change/ HTTP/1.1" 200 23023
+INFO 2025-09-05 11:35:43,835 basehttp 26381 140334351771328 "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,836 basehttp 26381 140334333937344 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,837 basehttp 26381 140334342330048 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,837 basehttp 26381 140334317151936 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-09-05 11:35:43,837 basehttp 26381 140334360164032 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-09-05 11:35:43,844 basehttp 26381 140334360164032 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,845 basehttp 26381 140334317151936 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,851 basehttp 26381 140334325544640 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-05 11:35:43,889 basehttp 26381 140334317151936 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,941 basehttp 26381 140334325544640 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-09-05 11:35:43,941 basehttp 26381 140334360164032 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2025-09-05 11:35:43,941 basehttp 26381 140334317151936 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
