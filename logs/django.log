@@ -565,3 +565,39 @@ INFO 2025-09-05 11:35:43,889 basehttp 26381 140334317151936 "GET /static/admin/j
 INFO 2025-09-05 11:35:43,941 basehttp 26381 140334325544640 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
 INFO 2025-09-05 11:35:43,941 basehttp 26381 140334360164032 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
 INFO 2025-09-05 11:35:43,941 basehttp 26381 140334317151936 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-09-17 12:05:38,560 autoreload 24714 137637938147456 Watching for file changes with StatReloader
+INFO 2025-09-17 12:07:30,070 autoreload 24714 137637938147456 /home/erasyl/Documents/app_news/apps/main/urls.py changed, reloading.
+INFO 2025-09-17 12:07:30,392 autoreload 25032 126444843839616 Watching for file changes with StatReloader
+INFO 2025-09-17 12:07:31,585 autoreload 25032 126444843839616 /home/erasyl/Documents/app_news/apps/main/urls.py changed, reloading.
+INFO 2025-09-17 12:07:31,888 autoreload 25046 133272558039168 Watching for file changes with StatReloader
+INFO 2025-09-17 12:09:16,612 autoreload 25611 131992629575808 Watching for file changes with StatReloader
+INFO 2025-09-17 12:09:47,229 autoreload 25909 128363978866816 Watching for file changes with StatReloader
+INFO 2025-09-17 12:10:05,985 autoreload 26041 128585804177536 Watching for file changes with StatReloader
+INFO 2025-09-17 12:10:58,174 autoreload 26201 134744736424064 Watching for file changes with StatReloader
+INFO 2025-09-17 12:11:32,552 autoreload 26451 127951186784384 Watching for file changes with StatReloader
+INFO 2025-09-17 12:11:53,513 autoreload 26605 127120561029248 Watching for file changes with StatReloader
+WARNING 2025-09-17 12:11:55,162 log 26605 127120428758720 Not Found: /
+WARNING 2025-09-17 12:11:55,163 basehttp 26605 127120428758720 "GET / HTTP/1.1" 404 2807
+WARNING 2025-09-17 12:11:55,223 log 26605 127120428758720 Not Found: /favicon.ico
+WARNING 2025-09-17 12:11:55,224 basehttp 26605 127120428758720 "GET /favicon.ico HTTP/1.1" 404 2858
+INFO 2025-09-17 12:12:20,885 basehttp 26605 127120411973312 "GET /api/v1/posts/categories/ HTTP/1.1" 200 52
+WARNING 2025-09-17 12:12:48,152 log 26605 127120411973312 Unauthorized: /api/v1/posts/categories/
+WARNING 2025-09-17 12:12:48,152 basehttp 26605 127120411973312 "POST /api/v1/posts/categories/ HTTP/1.1" 401 58
+INFO 2025-09-17 12:13:05,566 basehttp 26605 127120411973312 "POST /api/v1/auth/login/ HTTP/1.1" 200 855
+WARNING 2025-09-17 12:13:27,635 log 26605 127120411973312 Unauthorized: /api/v1/posts/categories/
+WARNING 2025-09-17 12:13:27,635 basehttp 26605 127120411973312 "POST /api/v1/posts/categories/ HTTP/1.1" 401 172
+INFO 2025-09-17 12:13:44,296 basehttp 26605 127120411973312 "POST /api/v1/posts/categories/ HTTP/1.1" 201 115
+INFO 2025-09-17 12:14:35,048 basehttp 26605 127120411973312 "GET /api/v1/posts/ HTTP/1.1" 200 52
+WARNING 2025-09-17 12:24:31,311 log 26605 127120428758720 Not Found: /api/v1/posts/{{post_slug}}/
+WARNING 2025-09-17 12:24:31,311 basehttp 26605 127120428758720 "GET /api/v1/posts/%7B%7Bpost_slug%7D%7D/ HTTP/1.1" 404 5012
+WARNING 2025-09-17 12:24:48,653 log 26605 127120428758720 Unauthorized: /api/v1/posts/
+WARNING 2025-09-17 12:24:48,653 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 401 58
+WARNING 2025-09-17 12:25:09,151 log 26605 127120428758720 Bad Request: /api/v1/posts/
+WARNING 2025-09-17 12:25:09,151 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 400 110
+WARNING 2025-09-17 12:25:50,720 log 26605 127120428758720 Bad Request: /api/v1/posts/
+WARNING 2025-09-17 12:25:50,721 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 400 110
+INFO 2025-09-17 12:26:00,757 basehttp 26605 127120428758720 "GET /api/v1/posts/categories/ HTTP/1.1" 200 167
+WARNING 2025-09-17 12:26:08,307 log 26605 127120428758720 Bad Request: /api/v1/posts/
+WARNING 2025-09-17 12:26:08,307 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 400 110
+WARNING 2025-09-17 12:26:13,787 log 26605 127120428758720 Bad Request: /api/v1/posts/
+WARNING 2025-09-17 12:26:13,788 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 400 110
