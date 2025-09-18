@@ -93,18 +93,17 @@ class MyPostView(generics.ListAPIView):
 
 @api_view(["GET"])
 @permission_classes([permissions.AllowAny])
-def posts_by_category(request,category,slug):
+def posts_by_category(request, slug):
     category = get_object_or_404(Category, slug=slug)
     posts = Post.objects.filter(
         category=category,
         status='published'
     ).select_related('author', 'category').order_by('-created_at')
 
- 
     serializer = PostSerializer(posts, many=True, context={'request': request})
 
     return Response({'category': CategorySerializer(category).data,
-                     'posts': serializer.data},)
+                     'posts': serializer.data})
 
 
 @api_view(['GET'])

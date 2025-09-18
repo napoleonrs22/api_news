@@ -18,6 +18,7 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_spectacular'
 ]
 
 THIRD_PARTY_APPS = [
@@ -114,6 +115,7 @@ AUTH_USER_MODEL = 'accounts.User'
 
 # REST Framework Configuration
 REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
@@ -137,6 +139,13 @@ REST_FRAMEWORK = {
     ],
 }
 
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'API для новостного сайта',
+    'DESCRIPTION': 'Подробная документация для API проекта',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
 # CORS Configuration
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Укажите порт, на котором работает ваш Vue.js

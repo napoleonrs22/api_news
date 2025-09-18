@@ -601,3 +601,103 @@ WARNING 2025-09-17 12:26:08,307 log 26605 127120428758720 Bad Request: /api/v1/p
 WARNING 2025-09-17 12:26:08,307 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 400 110
 WARNING 2025-09-17 12:26:13,787 log 26605 127120428758720 Bad Request: /api/v1/posts/
 WARNING 2025-09-17 12:26:13,788 basehttp 26605 127120428758720 "POST /api/v1/posts/ HTTP/1.1" 400 110
+INFO 2025-09-18 14:10:54,042 autoreload 12266 133841148792960 Watching for file changes with StatReloader
+WARNING 2025-09-18 14:11:01,825 log 12266 133841083692736 Not Found: /api/v1/posts/categories/ 
+WARNING 2025-09-18 14:11:01,826 basehttp 12266 133841083692736 "GET /api/v1/posts/categories/%20 HTTP/1.1" 404 5000
+INFO 2025-09-18 14:11:41,359 basehttp 12266 133841083692736 "POST /api/v1/auth/login/ HTTP/1.1" 200 855
+WARNING 2025-09-18 14:11:51,947 log 12266 133841083692736 Not Found: /api/v1/posts/categories/ 
+WARNING 2025-09-18 14:11:51,947 basehttp 12266 133841083692736 "GET /api/v1/posts/categories/%20 HTTP/1.1" 404 5000
+WARNING 2025-09-18 14:13:54,710 log 12266 133841074251456 Not Found: /api/v1/posts/categories/ 
+WARNING 2025-09-18 14:13:54,710 basehttp 12266 133841074251456 "POST /api/v1/posts/categories/%20 HTTP/1.1" 404 5001
+INFO 2025-09-18 14:18:00,321 autoreload 13765 137009893838976 Watching for file changes with StatReloader
+INFO 2025-09-18 14:21:03,529 autoreload 14538 138257812160640 Watching for file changes with StatReloader
+WARNING 2025-09-18 14:21:07,552 log 14538 138257677416128 Not Found: /
+WARNING 2025-09-18 14:21:07,552 basehttp 14538 138257677416128 "GET / HTTP/1.1" 404 3133
+WARNING 2025-09-18 14:21:07,624 log 14538 138257677416128 Not Found: /favicon.ico
+WARNING 2025-09-18 14:21:07,626 basehttp 14538 138257677416128 "GET /favicon.ico HTTP/1.1" 404 3184
+WARNING 2025-09-18 14:21:10,321 log 14538 138257677416128 Not Found: /docs
+WARNING 2025-09-18 14:21:10,321 basehttp 14538 138257677416128 "GET /docs HTTP/1.1" 404 3163
+WARNING 2025-09-18 14:21:12,367 log 14538 138257677416128 Not Found: /api
+WARNING 2025-09-18 14:21:12,368 basehttp 14538 138257677416128 "GET /api HTTP/1.1" 404 3160
+INFO 2025-09-18 14:21:19,003 basehttp 14538 138257677416128 "GET /api/docs HTTP/1.1" 301 0
+INFO 2025-09-18 14:21:19,025 basehttp 14538 138257669023424 "GET /api/docs/ HTTP/1.1" 200 4675
+INFO 2025-09-18 14:21:21,404 basehttp 14538 138257669023424 "GET /api/schema/ HTTP/1.1" 200 51381
+WARNING 2025-09-18 14:21:44,414 log 14538 138257669023424 Bad Request: /api/v1/login/
+WARNING 2025-09-18 14:21:44,414 basehttp 14538 138257669023424 "POST /api/v1/login/ HTTP/1.1" 400 68
+INFO 2025-09-18 14:21:54,299 basehttp 14538 138257669023424 "GET /api/v1/categories/ HTTP/1.1" 200 167
+WARNING 2025-09-18 14:22:02,536 log 14538 138257669023424 Unauthorized: /api/v1/categories/
+WARNING 2025-09-18 14:22:02,537 basehttp 14538 138257669023424 "POST /api/v1/categories/ HTTP/1.1" 401 58
+WARNING 2025-09-18 14:22:09,788 log 14538 138257669023424 Bad Request: /api/v1/login/
+WARNING 2025-09-18 14:22:09,788 basehttp 14538 138257669023424 "POST /api/v1/login/ HTTP/1.1" 400 68
+WARNING 2025-09-18 14:22:17,775 log 14538 138257669023424 Unauthorized: /api/v1/profile/
+WARNING 2025-09-18 14:22:17,775 basehttp 14538 138257669023424 "GET /api/v1/profile/ HTTP/1.1" 401 58
+WARNING 2025-09-18 14:22:26,547 log 14538 138257669023424 Bad Request: /api/v1/register/
+WARNING 2025-09-18 14:22:26,547 basehttp 14538 138257669023424 "POST /api/v1/register/ HTTP/1.1" 400 83
+WARNING 2025-09-18 14:39:43,903 log 14538 138257669023424 Unauthorized: /api/v1/profile/
+WARNING 2025-09-18 14:39:43,904 basehttp 14538 138257669023424 "GET /api/v1/profile/ HTTP/1.1" 401 58
+INFO 2025-09-18 14:40:11,203 basehttp 14538 138257669023424 "POST /api/v1/register/ HTTP/1.1" 201 823
+WARNING 2025-09-18 14:40:32,342 log 14538 138257669023424 Unauthorized: /api/v1/categories/
+WARNING 2025-09-18 14:40:32,342 basehttp 14538 138257669023424 "POST /api/v1/categories/ HTTP/1.1" 401 58
+INFO 2025-09-18 14:41:10,926 basehttp 14538 138257669023424 "POST /api/v1/login/ HTTP/1.1" 200 818
+WARNING 2025-09-18 14:41:13,683 log 14538 138257669023424 Unauthorized: /api/v1/categories/
+WARNING 2025-09-18 14:41:13,684 basehttp 14538 138257669023424 "POST /api/v1/categories/ HTTP/1.1" 401 58
+INFO 2025-09-18 14:41:24,689 basehttp 14538 138257669023424 "GET /api/v1/categories/ HTTP/1.1" 200 167
+INFO 2025-09-18 16:14:53,106 autoreload 20576 136412265898112 Watching for file changes with StatReloader
+WARNING 2025-09-18 16:16:16,022 log 20576 136412199384768 Unauthorized: /api/v1/my-posts/
+WARNING 2025-09-18 16:16:16,022 basehttp 20576 136412199384768 "GET /api/v1/my-posts/ HTTP/1.1" 401 58
+WARNING 2025-09-18 16:16:21,070 log 20576 136412199384768 Unauthorized: /api/v1/profile/
+WARNING 2025-09-18 16:16:21,070 basehttp 20576 136412199384768 "GET /api/v1/profile/ HTTP/1.1" 401 58
+WARNING 2025-09-18 16:22:14,267 log 20576 136412199384768 Bad Request: /api/v1/register/
+WARNING 2025-09-18 16:22:14,267 basehttp 20576 136412199384768 "POST /api/v1/register/ HTTP/1.1" 400 107
+WARNING 2025-09-18 16:22:39,315 log 20576 136412199384768 Bad Request: /api/v1/register/
+WARNING 2025-09-18 16:22:39,315 basehttp 20576 136412199384768 "POST /api/v1/register/ HTTP/1.1" 400 50
+INFO 2025-09-18 16:22:44,788 basehttp 20576 136412199384768 "POST /api/v1/register/ HTTP/1.1" 201 808
+INFO 2025-09-18 16:25:22,220 basehttp 20576 136412199384768 "GET /api/v1/ HTTP/1.1" 200 52
+WARNING 2025-09-18 16:25:28,770 log 20576 136412199384768 Bad Request: /api/v1/
+WARNING 2025-09-18 16:25:28,771 basehttp 20576 136412199384768 "POST /api/v1/ HTTP/1.1" 400 142
+WARNING 2025-09-18 16:25:37,227 log 20576 136412199384768 Bad Request: /api/v1/
+WARNING 2025-09-18 16:25:37,228 basehttp 20576 136412199384768 "POST /api/v1/ HTTP/1.1" 400 85
+WARNING 2025-09-18 16:25:42,372 log 20576 136412199384768 Bad Request: /api/v1/
+WARNING 2025-09-18 16:25:42,372 basehttp 20576 136412199384768 "POST /api/v1/ HTTP/1.1" 400 85
+INFO 2025-09-18 16:26:45,244 basehttp 20576 136412199384768 "POST /api/v1/ HTTP/1.1" 201 80
+ERROR 2025-09-18 16:28:06,844 log 20576 136412199384768 Internal Server Error: /api/v1/categories/1/posts
+Traceback (most recent call last):
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/erasyl/Documents/app_news/venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: posts_by_category() missing 1 required positional argument: 'category'
+ERROR 2025-09-18 16:28:06,847 basehttp 20576 136412199384768 "GET /api/v1/categories/1/posts HTTP/1.1" 500 118769
+INFO 2025-09-18 16:28:36,939 basehttp 20576 136412199384768 "POST /api/v1/categories/ HTTP/1.1" 201 79
+INFO 2025-09-18 16:28:40,152 basehttp 20576 136412199384768 "GET /api/v1/categories/ HTTP/1.1" 200 247
+INFO 2025-09-18 16:29:13,184 autoreload 20576 136412265898112 /home/erasyl/Documents/app_news/apps/main/views.py changed, reloading.
+INFO 2025-09-18 16:29:13,749 autoreload 22505 124419021492352 Watching for file changes with StatReloader
+INFO 2025-09-18 16:29:17,164 autoreload 22505 124419021492352 /home/erasyl/Documents/app_news/apps/main/views.py changed, reloading.
+INFO 2025-09-18 16:29:17,614 autoreload 22543 132707148460160 Watching for file changes with StatReloader
+INFO 2025-09-18 16:29:19,917 basehttp 22543 132707082303168 "GET /api/v1/categories/ HTTP/1.1" 200 247
+WARNING 2025-09-18 16:29:28,041 log 22543 132707082303168 Not Found: /api/v1/categories/1/
+WARNING 2025-09-18 16:29:28,042 basehttp 22543 132707082303168 "GET /api/v1/categories/1/ HTTP/1.1" 404 49
