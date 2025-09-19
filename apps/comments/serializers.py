@@ -31,7 +31,7 @@ class CommentCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comment
-        field = ['post','parent','content']
+        fields = ['post','parent','content']
 
     def validate_post(self, value):
         if not Post.objects.filter(id=value.id, status ='published').exists():
@@ -46,3 +46,23 @@ class CommentCreateSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         validated_data['author'] = self.context['request'].user
         return super().create(validated_data)
+
+class CommentUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Comment
+        fields = ['content']
+
+class CommentDetailSerializer(CommentSerializer):
+
+    replies = serializers.SerializerMethodField()
+
+    class Meta(CommentSerializer.Meta):
+        fields = CommentSerializer.Meta.fields + ['replies']
+
+
+    def get_replies(self,obj):
+        if obj.parent is None:
+            replies = obj.replies.filter(is_active=True).order_by('created_at')
+            return CommentSerializer(replies, many=True, context=self.context).data
+        return []

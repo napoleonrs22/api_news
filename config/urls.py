@@ -14,7 +14,7 @@ urlpatterns = [
     # Ваши существующие URL-адреса
     path('api/v1/', include('apps.accounts.urls')),
     path('api/v1/', include('apps.main.urls')),
-
+    path('api/v1/', include('apps.comments.urls')),
     # 2. Добавьте эти маршруты для документации
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # Swagger UI:
